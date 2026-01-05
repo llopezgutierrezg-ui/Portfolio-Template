@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucía López Gutiérrez · Design & Illustration</title>
     <link rel="stylesheet" href="./assets/css/stylesheets.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/prueba.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -69,39 +71,144 @@
       <div class="hero-content">
         <h1 class="title">PELUSINEITOR 2K</h1>
         <p class="subtitle">Design & Illustration</p>
-        <a href="#about" class="btn">View My Work</a>
+        <a href="#about" class="boton">View My Work</a>
       </div>
     </header>
 
-    <!-- ABOUT -->
-    <section id="about" class="section about">
-      <div>
-        <h2>About Me</h2>
-        <p>
-          I’m an Audiovisual Design and Illustration student passionate about
-          creativity, storytelling, and visual expression. I thrive on exploring
-          new artistic techniques and continuously pushing my design skills.
-        </p>
-      </div>
-      <img
-        class="perfil"
-        src="https://ik.imagekit.io/1kpiksaft/Imagen%20de%20WhatsApp%202025-11-09%20a%20las%2014.34.44_58b4ee9c.jpg"
-        alt="Lucía López Gutiérrez profile photo"
-        width="150"
-        height="150"
-      />
-    </section>
+<!-- About Section -->
+      <section id="about" class="section about">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">About Me</h2>
+          <div class="about-grid">
+            <div class="about-text animate-on-scroll">
+              <p>
+                I'm a passionate front-end developer with 5 years of experience
+                building responsive, accessible, and performant web
+                applications.
+              </p>
+              <p>
+                My focus is on creating seamless user experiences through clean
+                code and thoughtful design. I believe in the power of vanilla
+                JavaScript and modern CSS to create stunning interfaces without
+                framework bloat.
+              </p>
+            </div>
+            <div class="skills-grid" data-reveal-stagger>
+              <div class="skill-card">
+                <span class="skill-icon">🎨</span>
+                <h3>CSS/Sass</h3>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--fill: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <span class="skill-icon">⚡</span>
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--fill: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <span class="skill-icon">📱</span>
+                <h3>Responsive</h3>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--fill: 98%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <span class="skill-icon">♿</span>
+                <h3>A11y</h3>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--fill: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="section portfolio">
-      <h2>Selected Works</h2>
-      <div class="grid">
-        <div class="card">Book Design</div>
-        <div class="card">Illustration</div>
-        <div class="card">Photography</div>
-        <div class="card">Branding</div>
-      </div>
-    </section>
+      <!-- Projects Section -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Featured Projects</h2>
+          <div class="projects-grid" data-reveal-stagger>
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="https://picsum.photos/400/300?random=1"
+                  alt="E-commerce Platform"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-content">
+                <h3>E-commerce Platform</h3>
+                <p>
+                  A fully responsive online store with cart functionality and
+                  payment integration.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="https://picsum.photos/400/300?random=2"
+                  alt="Dashboard UI"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Analytics Dashboard</h3>
+                <p>
+                  Real-time data visualization dashboard with dark mode support.
+                </p>
+                <div class="project-tags">
+                  <span>CSS Grid</span><span>Charts</span><span>API</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="https://picsum.photos/400/300?random=3"
+                  alt="Mobile App Landing"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-content">
+                <h3>App Landing Page</h3>
+                <p>Conversion-optimized landing page with scroll animations.</p>
+                <div class="project-tags">
+                  <span>Animation</span><span>A/B Test</span><span>SEO</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+          <div class="contact-content animate-on-scroll">
+            <p>
+              Interested in working together? Let's talk about your project.
+            </p>
+            <a href="mailto:hello@example.com" class="btn btn-primary"
+              >Say Hello</a
+            >
+            <div class="social-links">
+              <a href="#" aria-label="GitHub">GitHub</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <section class="carousel-section">
       <div class="carousel-row reverse">
@@ -238,14 +345,12 @@
     </section>
 
     <!-- FOOTER -->
+    <!-- Footer -->
     <footer class="footer">
-      <p>
-        <p>&copy; 2025 Lucía López Gutiérrez · Design & Illustration</p>
-			<a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
-        <a href="mailto:l.lopez.gutierrez.g@gmail.com">
-          l.lopez.gutierrez.g@gmail.com
-        </a>
-      </p>
+      <div class="container">
+        <p>&copy; 2025 Jane Developer. Built with vanilla HTML, CSS & JS.</p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
+      </div>
     </footer>
 
     <!-- SCRIPT -->
